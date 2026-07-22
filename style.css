@@ -326,8 +326,90 @@ iconify-icon {
 .login-subtitle {
   font-size: .88rem;
   color: #a38890;
-  margin-bottom: 32px;
+  margin-bottom: 14px;
   font-weight: 500;
+}
+
+/* Login Instructions Notice Card */
+.login-notice-card {
+  background: rgba(255, 240, 245, 0.85);
+  border: 1px solid rgba(255, 130, 165, 0.4);
+  border-radius: 14px;
+  padding: 10px 14px;
+  margin: 8px 0 16px 0;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(255, 75, 114, 0.06);
+  backdrop-filter: blur(8px);
+}
+
+.login-notice-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #d93b58;
+  margin-bottom: 6px;
+}
+
+.notice-icon {
+  font-size: 1.1rem;
+  color: #ff4b72;
+}
+
+.login-notice-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.login-notice-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: #55444a;
+  line-height: 1.3;
+}
+
+.login-notice-list li iconify-icon {
+  font-size: 1rem;
+  color: #ff4b72;
+  flex-shrink: 0;
+}
+
+.login-notice-list strong {
+  color: #c22949;
+}
+
+/* Rotate Overlay Notice Tip */
+.rotate-notice-tip {
+  margin: 12px 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.rotate-notice-tip p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rotate-notice-tip iconify-icon {
+  font-size: 1.1rem;
+  color: #ffd1dc;
 }
 
 /* =============================================

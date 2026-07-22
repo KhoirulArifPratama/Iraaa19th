@@ -641,7 +641,7 @@ function buildBdayCalendar(year, monthIndex, highlightDay) {
     cell.textContent = d;
     if (d === highlightDay) {
       cell.classList.add('calendar-cell-highlight');
-      cell.innerHTML = '<span class="calendar-highlight-ring"></span><span class="calendar-highlight-num">' + d + '</span><span class="calendar-highlight-heart">🤍</span>';
+      cell.innerHTML = '<span class="calendar-highlight-ring"></span><span class="calendar-highlight-num">' + d + '</span>';
     }
     grid.appendChild(cell);
   }
