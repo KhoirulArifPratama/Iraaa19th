@@ -196,31 +196,68 @@
 
                         <!-- Photo Viewport Container (Hides Overflow Photos) -->
                         <div class="celebration-photo-viewport" id="celebration-photo-viewport">
+                            <div class="gallery-viewport-header">
+                                <div class="gvh-badge">
+                                    <iconify-icon icon="solar:stars-minimalistic-bold-duotone" style="color: #ff4b72; font-size: 0.95rem;"></iconify-icon>
+                                    <span>Memories Gallery</span>
+                                </div>
+                                <span class="gvh-sub">Click photo to view ✨</span>
+                            </div>
+
+                            <button type="button" class="photo-nav-btn prev-btn" id="celebration-photo-prev" aria-label="Previous photo">
+                                <iconify-icon icon="solar:alt-arrow-left-bold"></iconify-icon>
+                            </button>
+                            <button type="button" class="photo-nav-btn next-btn" id="celebration-photo-next" aria-label="Next photo">
+                                <iconify-icon icon="solar:alt-arrow-right-bold"></iconify-icon>
+                            </button>
+
                             <div class="photo-grid celebration-photo-grid" id="celebration-photo-grid">
                                 <div class="photo-grid-item pg-rot-1" data-index="0">
                                     <div class="photo-tape"></div>
-                                    <img src="photos/foto1.jpeg" alt="Foto 1">
+                                    <div class="photo-img-wrap">
+                                        <img src="photos/foto1.jpeg" alt="Foto 1">
+                                    </div>
+                                    <div class="photo-card-label">Sweet 19 💕</div>
                                 </div>
                                 <div class="photo-grid-item pg-rot-2" data-index="1">
                                     <div class="photo-tape"></div>
-                                    <img src="photos/foto2.jpeg" alt="Foto 2">
+                                    <div class="photo-img-wrap">
+                                        <img src="photos/foto2.jpeg" alt="Foto 2">
+                                    </div>
+                                    <div class="photo-card-label">Sunkissed ✨</div>
                                 </div>
                                 <div class="photo-grid-item pg-rot-3" data-index="2">
                                     <div class="photo-tape"></div>
-                                    <img src="photos/foto3.jpeg" alt="Foto 3">
+                                    <div class="photo-img-wrap">
+                                        <img src="photos/foto3.jpeg" alt="Foto 3">
+                                    </div>
+                                    <div class="photo-card-label">Favorite 🌸</div>
                                 </div>
                                 <div class="photo-grid-item pg-rot-4" data-index="3">
                                     <div class="photo-tape"></div>
-                                    <img src="photos/foto4.jpeg" alt="Foto 4">
+                                    <div class="photo-img-wrap">
+                                        <img src="photos/foto4.jpeg" alt="Foto 4">
+                                    </div>
+                                    <div class="photo-card-label">Graceful 🎀</div>
                                 </div>
                                 <div class="photo-grid-item pg-rot-5" data-index="4">
                                     <div class="photo-tape"></div>
-                                    <img src="photos/foto5.jpeg" alt="Foto 5">
+                                    <div class="photo-img-wrap">
+                                        <img src="photos/foto5.jpeg" alt="Foto 5">
+                                    </div>
+                                    <div class="photo-card-label">Pure Smile 💖</div>
                                 </div>
                                 <div class="photo-grid-item pg-rot-6" data-index="5">
                                     <div class="photo-tape"></div>
-                                    <img src="photos/foto6.jpeg" alt="Foto 6">
+                                    <div class="photo-img-wrap">
+                                        <img src="photos/foto6.jpeg" alt="Foto 6">
+                                    </div>
+                                    <div class="photo-card-label">Lovely 👑</div>
                                 </div>
+                            </div>
+
+                            <div class="gallery-viewport-footer">
+                                <span><iconify-icon icon="solar:hand-stars-bold-duotone" style="vertical-align: middle; margin-right: 4px;"></iconify-icon> Geser foto / Swipe &rarr;</span>
                             </div>
                         </div>
                     </div>
