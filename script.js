@@ -1910,9 +1910,30 @@ function initPhotoGridInteractivity() {
     }, 900);
   }
 
+  let isDraggingPhoto = false;
+  let startX = 0;
+  let startY = 0;
+
   items.forEach((item, idx) => {
-    // Click to open lightbox + spawn heart
+    item.addEventListener('pointerdown', (e) => {
+      isDraggingPhoto = false;
+      startX = e.clientX;
+      startY = e.clientY;
+    });
+
+    item.addEventListener('pointermove', (e) => {
+      if (Math.abs(e.clientX - startX) > 8 || Math.abs(e.clientY - startY) > 8) {
+        isDraggingPhoto = true;
+      }
+    });
+
+    // Click to open lightbox + spawn heart (only if NOT dragging/swiping)
     item.addEventListener('click', (e) => {
+      if (isDraggingPhoto) {
+        e.stopPropagation();
+        e.preventDefault();
+        return;
+      }
       spawnFloatingHeartAt(e.clientX, e.clientY);
       showPhotoLightbox(idx);
     });
