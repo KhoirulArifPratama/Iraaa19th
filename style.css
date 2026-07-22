@@ -342,7 +342,8 @@ iconify-icon {
   gap: 8px;
   text-align: left;
   font-size: 0.85rem;
-  color: #4a343c;
+  font-weight: 700;
+  color: #c22949;
   box-shadow: 0 4px 12px rgba(255, 75, 114, 0.08);
 }
 
@@ -352,16 +353,13 @@ iconify-icon {
   align-items: center;
   gap: 8px;
   line-height: 1.35;
+  font-weight: 700;
 }
 
 .rotate-notice-tip iconify-icon {
   font-size: 1.15rem;
   color: #ff4b72;
   flex-shrink: 0;
-}
-
-.rotate-notice-tip strong {
-  color: #d93b58;
 }
 
 /* =============================================
