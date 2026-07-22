@@ -2086,6 +2086,7 @@ body.scroll-locked {
   align-items: flex-start;
   justify-content: center;
   width: 100%;
+  padding-left: 18px;
 }
 
 #home-celebration-wrapper .flow-next-wrap {
